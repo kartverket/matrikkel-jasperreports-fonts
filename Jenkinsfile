@@ -58,8 +58,8 @@ pipeline {
         success {
             deleteDir()
         }
-        cleanup {
+//        cleanup {
 //            pushBuildFeed()
-        }
+//        }
     }
 }
