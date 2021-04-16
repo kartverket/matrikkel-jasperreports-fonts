@@ -48,7 +48,7 @@ pipeline {
 
         stage('Publish') {
             steps {
-                sh "./gradlew publish -Pversion=${params.version}"
+                sh "./gradlew publish -Pversion=${params.version.replace('refs/tags/', '')}"
             }
         }
 
@@ -58,8 +58,8 @@ pipeline {
         success {
             deleteDir()
         }
-//        cleanup {
-//            pushBuildFeed()
-//        }
+        cleanup {
+            pushBuildFeed()
+        }
     }
 }
