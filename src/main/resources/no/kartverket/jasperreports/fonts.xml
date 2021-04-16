@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+    <bean id="FiraSansFamily" class="net.sf.jasperreports.engine.fonts.SimpleFontFamily">
+        <property name="name" value="Fira Sans"/>
+        <property name="normal" value="no/kartverket/fonts/fira_sans/FiraSans-Regular.ttf"/>
+        <property name="bold" value="no/kartverket/fonts/fira_sans/FiraSans-Bold.ttf"/>
+        <property name="italic" value="no/kartverket/fonts/fira_sans/FiraSans-Italic.ttf"/>
+        <property name="boldItalic" value="no/kartverket/fonts/fira_sans/FiraSans-BoldItalic.ttf"/>
+        <property name="pdfEncoding" value="Identity-H"/>
+        <property name="pdfEmbedded" value="true"/>
+        <property name="exportFonts">
+            <map>
+                <entry key="net.sf.jasperreports.html">
+                    <value>'Mulish', Arial, Helvetica, sans-serif</value>
+                </entry>
+                <entry key="net.sf.jasperreports.xhtml">
+                    <value>'Mulish', Arial, Helvetica, sans-serif</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="MulishFamily" class="net.sf.jasperreports.engine.fonts.SimpleFontFamily">
+        <property name="name" value="Mulish"/>
+        <property name="normal" value="no/kartverket/fonts/mulish/static/Mulish-Regular.ttf"/>
+        <property name="bold" value="no/kartverket/fonts/mulish/static/Mulish-Bold.ttf"/>
+        <property name="italic" value="no/kartverket/fonts/mulish/static/Mulish-Italic.ttf"/>
+        <property name="boldItalic" value="no/kartverket/fonts/mulish/static/Mulish-BoldItalic.ttf"/>
+        <property name="pdfEncoding" value="Identity-H"/>
+        <property name="pdfEmbedded" value="true"/>
+        <property name="exportFonts">
+            <map>
+                <entry key="net.sf.jasperreports.html">
+                    <value>'Mulish', Arial, Helvetica, sans-serif</value>
+                </entry>
+                <entry key="net.sf.jasperreports.xhtml">
+                    <value>'Mulish', Arial, Helvetica, sans-serif</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+</beans>
