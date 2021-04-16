@@ -27,7 +27,7 @@ pipeline {
         extendedChoice(
             name: 'version',
             description: 'Tagget versjon for publisering',
-            value: "${listGitRefs(repo: GIT_URL, branches: false)}",
+            value: "${listGitRefs(repo: 'ssh://git@bitbucket.statkart.no:7999/mat/jasperreports-fonts.git', branches: false)}",
             defaultValue: '--',
             type: 'PT_SINGLE_SELECT',
             visibleItemCount: 10
