@@ -27,3 +27,7 @@ publishing {
         }
     }
 }
+
+tasks.withType(GenerateModuleMetadata) {
+    enabled = false // denne spesifiserer kompatibel java versjon - trenger ikke Gradle Module Metadata
+}
