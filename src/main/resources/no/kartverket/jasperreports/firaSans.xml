@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fontFamilies>
+    <fontFamily name="Fira Sans">
+        <normal>no/kartverket/fonts/fira_sans/FiraSans-Regular.ttf</normal>
+        <bold>no/kartverket/fonts/fira_sans/FiraSans-Bold.ttf</bold>
+        <italic>no/kartverket/fonts/fira_sans/FiraSans-Italic.ttf</italic>
+        <boldItalic>no/kartverket/fonts/fira_sans/FiraSans-BoldItalic.ttf</boldItalic>
+        <pdfEncoding>Identity-H</pdfEncoding>
+        <pdfEmbedded>true</pdfEmbedded>
+        <exportFonts>
+            <export key="net.sf.jasperreports.html">'Fira Sans', Arial, Helvetica, sans-serif</export>
+            <export key="net.sf.jasperreports.xhtml">'Fira Sans', Arial, Helvetica, sans-serif</export>
+        </exportFonts>
+    </fontFamily>
+</fontFamilies>

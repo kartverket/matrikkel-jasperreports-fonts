@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fontFamilies>
+    <fontFamily name="Mulish">
+        <normal>no/kartverket/fonts/mulish/static/Mulish-Regular.ttf</normal>
+        <bold>no/kartverket/fonts/mulish/static/Mulish-Bold.ttf</bold>
+        <italic>no/kartverket/fonts/mulish/static/Mulish-Italic.ttf</italic>
+        <boldItalic>no/kartverket/fonts/mulish/static/Mulish-BoldItalic.ttf</boldItalic>
+        <pdfEncoding>Identity-H</pdfEncoding>
+        <pdfEmbedded>true</pdfEmbedded>
+        <exportFonts>
+            <export key="net.sf.jasperreports.html">'Mulish', Arial, Helvetica, sans-serif</export>
+            <export key="net.sf.jasperreports.xhtml">'Mulish', Arial, Helvetica, sans-serif</export>
+        </exportFonts>
+    </fontFamily>
+</fontFamilies>
