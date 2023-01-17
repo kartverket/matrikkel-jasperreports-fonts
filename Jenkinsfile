@@ -23,32 +23,27 @@ pipeline {
         skipStagesAfterUnstable()
     }
 
-    parameters {
-        extendedChoice(
-            name: 'version',
-            description: 'Tagget versjon for publisering',
-            value: "${listGitRefs(repo: 'ssh://git@bitbucket.statkart.no:7999/mat/jasperreports-fonts.git', branches: false)}",
-            defaultValue: '--',
-            type: 'PT_SINGLE_SELECT',
-            visibleItemCount: 10
-        )
-    }
 
     stages {
         stage('Validate') {
             steps {
                 script {
-                    if (params.version.startsWith('--')) {
+                    if ("${TAG_NAME}" == "") {
                         currentBuild.result = 'ABORTED'
-                        error('Du må velge versjon!')
+                        error('Må bygges med tagget version!')
                     }
                 }
             }
         }
 
         stage('Publish') {
+            when {
+                allOf {
+                    buildingTag()
+                }
+            }
             steps {
-                sh "./gradlew publish -Pversion=${params.version.replace('refs/tags/', '')}"
+                sh "./gradlew publish -Pversion=${TAG_NAME}"
             }
         }
 
