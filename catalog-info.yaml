@@ -1,0 +1,38 @@
+# nonk8s
+apiVersion: "backstage.io/v1alpha1"
+kind: "Component"
+metadata:
+  name: "matrikkel-jasperreports-fonts"
+  tags:
+  - "internal"
+spec:
+  type: "library"
+  lifecycle: "production"
+  owner: "heimdall"
+  system: "matrikkel"
+---
+apiVersion: "backstage.io/v1alpha1"
+kind: "Group"
+metadata:
+  name: "security_champion_matrikkel-jasperreports-fonts"
+  title: "Security Champion matrikkel-jasperreports-fonts"
+spec:
+  type: "security_champion"
+  parent: "eiendom_security_champions"
+  members:
+  - "lislei"
+  children:
+  - "resource:matrikkel-jasperreports-fonts"
+---
+apiVersion: "backstage.io/v1alpha1"
+kind: "Resource"
+metadata:
+  name: "matrikkel-jasperreports-fonts"
+  links:
+  - url: "https://github.com/kartverket/matrikkel-jasperreports-fonts"
+    title: "matrikkel-jasperreports-fonts på GitHub"
+spec:
+  type: "repo"
+  owner: "security_champion_matrikkel-jasperreports-fonts"
+  dependencyOf:
+  - "component:matrikkel-jasperreports-fonts"
