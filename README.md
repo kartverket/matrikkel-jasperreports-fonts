@@ -21,6 +21,7 @@ https://fonts.google.com/specimen/Fira+Sans
 Denne ligner Mulish og Arial og har samme linjehøyde som Arial. Denne er funnet til å være drop-in kompatibel med Arial
 samtidig som den ligner veldig på Mulish. 
 
+Disse fontene er lisensiert under SIL Open Font License (OFL). Se /src/main/resources/no/kartverket/fonts for detaljer.
 
 # Publisering
 Pakken ble tidligere publisert til Nexus. Gamle versjoner av pakken er migrert til GitHub Packages.
